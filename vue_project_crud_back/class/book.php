@@ -6,7 +6,8 @@ class Book
     private $conn;
 
     // Table
-    private $db_table = "book_travel";
+    private $db_table = "book_travel"; // $this
+    //access to the db_table from the object
 
     // Columns
     public $id;

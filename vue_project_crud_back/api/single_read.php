@@ -13,7 +13,8 @@
 
     $item = new Book($db);
 
-    $item->id = isset($_GET['id']) ? $_GET['id'] : die();
+    $item->id = isset($_GET['id']) ? $_GET['id'] : die(); //ternaire with ? : 
+    //get the book in db //get the var in the uRL
   
     $item->getSingleBook();
 

@@ -27,7 +27,7 @@ export default {
 	async created() {
 		const { bookId } = this.$route.params
         console.log(bookId)
-		const apiDetailsUri = 'http://localhost:8000/api/single_read.php/?id=' + bookId
+		const apiDetailsUri = 'http://localhost:8000/api/single_read.php/?id=' + bookId //requete vers le back 
 		const oneBook = await axios.get(apiDetailsUri)
 		this.book = oneBook.data
 	}
